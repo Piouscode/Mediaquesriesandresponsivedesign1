@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+/******************************************/
+
+img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.imagesDogCat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.textParagraph {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+summary,
+details {
+  display: none;
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  /* Styles for phones  */
+  body {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .imagesDogCat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .kissingCuties,
+  .adorableDog,
+  .textParagraph {
+    display: none;
+  }
+
+  summary,
+  details {
+    display: block;
+  }
+
+  summary {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .detailsClass {
+    margin-top: 20px;
+    align-self: center;
+  }
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* CSS styles for iPad Mini go here */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .imagesDogCat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .adorableDog,
+    .textParagraph {
+        display: none;
+    }
+
+  summary,
+  details {
+    display: block;
+  }
+
+  summary {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+/* Media Queries for iPad Pro Max */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 2048px) and (orientation: portrait) {
+  /* CSS styles for iPad Pro Max go here */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .imagesDogCat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .adorableDog,
+  .textParagraph {
+    display: none;
+  }
+
+  summary {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .textParagraph {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
